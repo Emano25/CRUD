@@ -74,7 +74,7 @@ class HotelController extends Controller
 
         if ($request->has('attributs')) {
             $hotel->attributs()->attach($request->input('attributs'));
-        }
+         }
 
 
         return redirect()->route('hotel.index');
